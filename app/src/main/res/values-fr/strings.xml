@@ -6,8 +6,8 @@
         <item quantity="other">%d nouveaux articles</item>
     </plurals>
     <string name="app_name">Flym</string>
-    <string name="about_flym">À propos de Flym</string>
-    <string name="welcome_title">Bienvenue sur Flym. Voulez-vous ajouter un flux ?</string>
+    <string name="about_flym">À propos de Cherry Reader</string>
+    <string name="welcome_title">Bienvenue sur Cherry. Voulez-vous ajouter un flux ?</string>
     <string name="cannot_find_feeds">Aucun flux n\'a été trouvé</string>
     <string name="menu_settings">Paramètres</string>
     <string name="menu_edit_feed">Éditer le flux</string>

@@ -7,8 +7,8 @@
         <item quantity="other">Novih članaka: %d</item>
     </plurals>
     <string name="app_name">Flim</string>
-    <string name="about_flym">O Flimu</string>
-    <string name="welcome_title">Dobrodošli u Flim. Da li želite da dodate novi dovod?</string>
+    <string name="about_flym">O Cherry Reader</string>
+    <string name="welcome_title">Dobrodošli u Cherry. Da li želite da dodate novi dovod?</string>
     <string name="cannot_find_feeds">Dovodi nisu pronađeni</string>
     <string name="menu_settings">Podešavanja</string>
     <string name="menu_edit_feed">Uređivanje dovoda</string>

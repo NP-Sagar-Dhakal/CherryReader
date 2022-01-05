@@ -7,8 +7,8 @@
         <item quantity="many">%d nových článkov</item>
         <item quantity="other">%d nových článkov</item>
     </plurals>
-    <string name="about_flym">O aplikácii Flym</string>
-    <string name="welcome_title">Vitajte v aplikácii Flym. Chcete pridať nový zdroj?</string>
+    <string name="about_flym">O aplikácii Cherry Reader</string>
+    <string name="welcome_title">Vitajte v aplikácii Cherry. Chcete pridať nový zdroj?</string>
     <string name="cannot_find_feeds">No feeds has been found</string>
     <string name="menu_settings">Nastavenia</string>
     <string name="menu_edit_feed">Upraviť zdroj</string>

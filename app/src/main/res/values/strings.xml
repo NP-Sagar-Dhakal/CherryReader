@@ -6,9 +6,9 @@
         <item quantity="one">One new entry</item>
         <item quantity="other">%d new entries</item>
     </plurals>
-    <string name="app_name">Flym</string>
-    <string name="about_flym">About Flym</string>
-    <string name="welcome_title">Welcome to Flym. Would you like to add a feed?</string>
+    <string name="app_name" translatable="false">Cherry Reader</string>
+    <string name="about_flym">About Cherry Reader</string>
+    <string name="welcome_title">Welcome to Cherry. Would you like to add a feed?</string>
     <string name="new_feed">New Feed</string>
     <string name="cannot_find_feeds">No feeds have been found</string>
     <string name="menu_settings">Settings</string>
@@ -23,7 +23,7 @@
     <string name="network_error">The network is not set up</string>
     <string name="drawer_explanation">Welcome!\n\nLong press on the feeds to see options ▼</string>
     <string name="drawer_fetch_error_explanation">Some of your feeds did not refresh correctly ▼</string>
-    <string name="about_screen_info">I\'m publishing this application as free and open-source software under GPLv3 licence. Feel free to modify it as long as you keep it open-source as well.</string>
+    <string name="about_screen_info" translatable="false">I\'m publishing this application as free and open-source software under GPLv3 licence. Feel free to modify it as long as you keep it open-source as well. This project is forked from Flym Feed Reader (FredJul).</string>
     <string name="navigation_button_content_description">Toggle feed menu</string>
 
     <!-- FEEDS -->

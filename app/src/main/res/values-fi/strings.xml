@@ -5,8 +5,8 @@
         <item quantity="one">Yksi uusi artikkeli</item>
         <item quantity="other">%d uutta artikkelia</item>
     </plurals>
-    <string name="about_flym">Tietoja Flymista</string>
-    <string name="welcome_title">Tervetuloa Flym:iin. Haluaisitko lisätä syötteen?</string>
+    <string name="about_flym">Tietoja Cherry Reader</string>
+    <string name="welcome_title">Tervetuloa Cherry:iin. Haluaisitko lisätä syötteen?</string>
     <string name="cannot_find_feeds">Syötteitä ei löydy</string>
     <string name="menu_settings">Asetukset</string>
     <string name="menu_edit_feed">Muokkaa syötettä</string>

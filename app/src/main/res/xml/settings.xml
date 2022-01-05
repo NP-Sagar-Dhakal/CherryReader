@@ -10,7 +10,7 @@
         android:title="@string/settings_category_general"
         app:iconSpaceReserved="false">
 
-        <net.frju.flym.ui.views.AutoSummaryListPreference
+        <com.cherry.reader.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="DARK"
@@ -39,7 +39,7 @@
         app:iconSpaceReserved="false">
 
 
-        <net.frju.flym.ui.views.AutoSummaryListPreference
+        <com.cherry.reader.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="1"
@@ -59,7 +59,7 @@
             android:title="@string/settings_display_images"
             app:iconSpaceReserved="false" />
 
-        <net.frju.flym.ui.views.AutoSummaryListPreference
+        <com.cherry.reader.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="WIFI_ONLY_PRELOAD"
@@ -125,7 +125,7 @@
             android:title="@string/settings_sort_order_title"
             app:iconSpaceReserved="false" />
 
-        <net.frju.flym.ui.views.AutoSummaryListPreference
+        <com.cherry.reader.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="4"
@@ -136,7 +136,7 @@
             android:title="@string/settings_keep_time"
             app:iconSpaceReserved="false" />
 
-        <net.frju.flym.ui.views.AutoSummaryListPreference
+        <com.cherry.reader.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="0"
@@ -181,7 +181,7 @@
             android:title="@string/settings_refresh_enabled"
             app:iconSpaceReserved="false" />
 
-        <net.frju.flym.ui.views.AutoSummaryListPreference
+        <com.cherry.reader.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="21600"

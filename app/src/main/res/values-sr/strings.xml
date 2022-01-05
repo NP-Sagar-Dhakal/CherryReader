@@ -6,9 +6,9 @@
         <item quantity="few">Нових чланака: %d</item>
         <item quantity="other">Нових чланака: %d</item>
     </plurals>
-    <string name="app_name">Флим</string>
-    <string name="about_flym">О Флиму</string>
-    <string name="welcome_title">Добродошли у Флим. Да ли желите да додате нови довод?</string>
+    <string name="app_name">Cherry Reader</string>
+    <string name="about_flym">О Cherry Reader</string>
+    <string name="welcome_title">Добродошли у Cherry. Да ли желите да додате нови довод?</string>
     <string name="cannot_find_feeds">Доводи нису пронађени</string>
     <string name="menu_settings">Подешавања</string>
     <string name="menu_edit_feed">Уређивање довода</string>

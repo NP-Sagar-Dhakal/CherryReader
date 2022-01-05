@@ -5,8 +5,8 @@
         <item quantity="one">Sarrera berri bat</item>
         <item quantity="other">%d sarrera berri</item>
     </plurals>
-    <string name="about_flym">Flymi buruz</string>
-    <string name="welcome_title">Ongi etorri Flymera. Jario bat gehitu nahi al zenuke?</string>
+    <string name="about_flym">Cherry Reader buruz</string>
+    <string name="welcome_title">Ongi etorri Cherry. Jario bat gehitu nahi al zenuke?</string>
     <string name="cannot_find_feeds">Ez da jariorik aurkitu</string>
     <string name="menu_settings">Ezarpenak</string>
     <string name="menu_edit_feed">Jarioa editatu</string>

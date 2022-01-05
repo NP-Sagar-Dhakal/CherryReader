@@ -1,4 +1,4 @@
-package net.frju.flym.data.entities
+package com.cherry.reader.data.entities
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
