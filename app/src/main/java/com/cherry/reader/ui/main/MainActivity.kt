@@ -102,7 +102,6 @@ class MainActivity : AppCompatActivity(), MainNavigator, AnkoLogger {
                     menuInflater.inflate(R.menu.menu_drawer_header, menu)
                     setOnMenuItemClickListener { item ->
                         when (item.itemId) {
-                            R.id.add_feed -> goToFeedSearch()
                             R.id.reorder -> startActivity<FeedListEditActivity>()
                             R.id.import_feeds -> pickOpml()
                             R.id.export_feeds -> exportOpml()
@@ -115,6 +114,10 @@ class MainActivity : AppCompatActivity(), MainNavigator, AnkoLogger {
         }
         nav.layoutManager = LinearLayoutManager(this)
         nav.adapter = feedAdapter
+
+        add_feed_fab.onClick {
+            goToFeedSearch()
+        }
 
         App.db.feedDao().observeAllWithCount.observe(this@MainActivity, { nullableFeeds ->
             nullableFeeds?.let { feeds ->

@@ -44,7 +44,7 @@
         android:drawableTop="@drawable/ic_empty_gray_100dp"
         android:gravity="center"
         android:text="@string/no_entries"
-        android:textColor="@android:color/darker_gray" />
+        android:textColor="@color/normal_tint" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

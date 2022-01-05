@@ -4,11 +4,6 @@
     tools:context="com.cherry.reader.ui.main.MainActivity">
 
     <item
-        android:id="@+id/add_feed"
-        android:title="@string/new_feed"
-        app:showAsAction="never" />
-
-    <item
         android:id="@+id/reorder"
         android:title="@string/menu_reorder"
         app:showAsAction="never" />

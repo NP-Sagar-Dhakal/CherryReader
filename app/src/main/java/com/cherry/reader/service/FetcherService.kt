@@ -198,7 +198,7 @@ class FetcherService : IntentService(FetcherService::class.java.simpleName) {
 
                         val notifBuilder = NotificationCompat.Builder(context, channelId)
                                 .setContentIntent(contentIntent)
-                                .setSmallIcon(R.drawable.ic_statusbar_rss)
+                                .setSmallIcon(R.mipmap.ic_launcher)
                                 .setLargeIcon(
                                         BitmapFactory.decodeResource(
                                                 context.resources,

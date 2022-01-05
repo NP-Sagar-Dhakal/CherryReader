@@ -273,10 +273,10 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
                 fabScrollListener = null
             }
 
-            toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
-                scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
-                        AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
-            }
+//            toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
+//                scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
+//                        AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
+//            }
             activity?.window?.let {
                 WindowCompat.setDecorFitsSystemWindows(it, false)
             }

@@ -156,7 +156,7 @@ class EntryDetailsFragment : Fragment() {
             }
         }
 
-        if (defaultSharedPreferences.getBoolean(HIDE_NAVIGATION_ON_SCROLL, true)) {
+        if (false) {
             toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
                 scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
                     AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
@@ -177,9 +177,9 @@ class EntryDetailsFragment : Fragment() {
                         rightMargin = systemInsets.right
                     }
                 }
-                toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
-                    topMargin = systemInsets.top
-                }
+//                toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
+//                    topMargin = systemInsets.top
+//                }
                 entry_view.updateLayoutParams<FrameLayout.LayoutParams> {
                     bottomMargin = systemInsets.bottom
                 }
