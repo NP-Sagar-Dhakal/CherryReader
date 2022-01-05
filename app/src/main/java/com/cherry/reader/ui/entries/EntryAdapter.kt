@@ -26,21 +26,28 @@ import android.widget.ImageView
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.amulyakhare.textdrawable.TextDrawable
+import com.amulyakhare.textdrawable.util.ColorGenerator
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade
 import com.bumptech.glide.request.transition.DrawableCrossFadeFactory
-import kotlinx.android.synthetic.main.view_entry.view.*
-import com.cherry.reader.R
 import com.cherry.reader.GlideApp
+import com.cherry.reader.R
 import com.cherry.reader.data.entities.EntryWithFeed
-import com.cherry.reader.data.entities.Feed
 import com.cherry.reader.service.FetcherService
+import kotlinx.android.synthetic.main.view_entry.view.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.sdk21.listeners.onClick
 import org.jetbrains.anko.sdk21.listeners.onLongClick
 import org.jetbrains.anko.uiThread
+import java.util.*
 
 
-class EntryAdapter(var displayThumbnails: Boolean, private val globalClickListener: (EntryWithFeed) -> Unit, private val globalLongClickListener: (EntryWithFeed) -> Unit, private val favoriteClickListener: (EntryWithFeed, ImageView) -> Unit) : PagedListAdapter<EntryWithFeed, EntryAdapter.ViewHolder>(DIFF_CALLBACK) {
+class EntryAdapter(
+    var displayThumbnails: Boolean,
+    private val globalClickListener: (EntryWithFeed) -> Unit,
+    private val globalLongClickListener: (EntryWithFeed) -> Unit,
+    private val favoriteClickListener: (EntryWithFeed, ImageView) -> Unit
+) : PagedListAdapter<EntryWithFeed, EntryAdapter.ViewHolder>(DIFF_CALLBACK) {
 
     companion object {
 
@@ -48,26 +55,50 @@ class EntryAdapter(var displayThumbnails: Boolean, private val globalClickListen
         val DIFF_CALLBACK = object : DiffUtil.ItemCallback<EntryWithFeed>() {
 
             override fun areItemsTheSame(oldItem: EntryWithFeed, newItem: EntryWithFeed): Boolean =
-                    oldItem.entry.id == newItem.entry.id
+                oldItem.entry.id == newItem.entry.id
 
-            override fun areContentsTheSame(oldItem: EntryWithFeed, newItem: EntryWithFeed): Boolean =
-                    oldItem.entry.id == newItem.entry.id && oldItem.entry.read == newItem.entry.read && oldItem.entry.favorite == newItem.entry.favorite // no need to do more complex in our case
+            override fun areContentsTheSame(
+                oldItem: EntryWithFeed,
+                newItem: EntryWithFeed
+            ): Boolean =
+                oldItem.entry.id == newItem.entry.id && oldItem.entry.read == newItem.entry.read && oldItem.entry.favorite == newItem.entry.favorite // no need to do more complex in our case
         }
 
         @JvmField
-        val CROSS_FADE_FACTORY: DrawableCrossFadeFactory = DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build()
+        val CROSS_FADE_FACTORY: DrawableCrossFadeFactory =
+            DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build()
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         @SuppressLint("SetTextI18n")
-        fun bind(entryWithFeed: EntryWithFeed, globalClickListener: (EntryWithFeed) -> Unit, globalLongClickListener: (EntryWithFeed) -> Unit, favoriteClickListener: (EntryWithFeed, ImageView) -> Unit) = with(itemView) {
+        fun bind(
+            entryWithFeed: EntryWithFeed,
+            globalClickListener: (EntryWithFeed) -> Unit,
+            globalLongClickListener: (EntryWithFeed) -> Unit,
+            favoriteClickListener: (EntryWithFeed, ImageView) -> Unit
+        ) = with(itemView) {
             doAsync {
-                val mainImgUrl = if (TextUtils.isEmpty(entryWithFeed.entry.imageLink)) null else FetcherService.getDownloadedOrDistantImageUrl(entryWithFeed.entry.id, entryWithFeed.entry.imageLink!!)
+                val mainImgUrl =
+                    if (TextUtils.isEmpty(entryWithFeed.entry.imageLink)) null else FetcherService.getDownloadedOrDistantImageUrl(
+                        entryWithFeed.entry.id,
+                        entryWithFeed.entry.imageLink!!
+                    )
                 uiThread {
-                    val letterDrawable = Feed.getLetterDrawable(entryWithFeed.entry.feedId, entryWithFeed.feedTitle)
+                    val generator = ColorGenerator.DEFAULT
+                    val color =
+                        generator.getColor(entryWithFeed.entry.id) // The color is specific to the feedId (which shouldn't change)
+                    val letterDrawable = TextDrawable.builder().buildRound(
+                        if (entryWithFeed.entry.title != null) entryWithFeed.entry.title!!.substring(
+                            0,
+                            1
+                        )
+                            .uppercase(Locale.getDefault()) else "", color
+                    )
                     if (mainImgUrl != null) {
-                        GlideApp.with(context).load(mainImgUrl).centerCrop().transition(withCrossFade(CROSS_FADE_FACTORY)).placeholder(letterDrawable).error(letterDrawable).into(main_icon)
+                        GlideApp.with(context).load(mainImgUrl).circleCrop()
+                            .transition(withCrossFade(CROSS_FADE_FACTORY))
+                            .placeholder(letterDrawable).error(letterDrawable).into(main_icon)
                     } else {
                         GlideApp.with(context).clear(main_icon)
                         main_icon.setImageDrawable(letterDrawable)
@@ -115,7 +146,12 @@ class EntryAdapter(var displayThumbnails: Boolean, private val globalClickListen
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val entryWithFeed = getItem(position)
         if (entryWithFeed != null) {
-            holder.bind(entryWithFeed, globalClickListener, globalLongClickListener, favoriteClickListener)
+            holder.bind(
+                entryWithFeed,
+                globalClickListener,
+                globalLongClickListener,
+                favoriteClickListener
+            )
         } else {
             // Null defines a placeholder item - PagedListAdapter will automatically invalidate
             // this row when the actual object is loaded from the database
