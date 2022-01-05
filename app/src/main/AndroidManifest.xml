@@ -19,14 +19,14 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Feed_Theme"
         android:usesCleartextTraffic="true">
         <activity
             android:name="net.frju.flym.ui.main.MainActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:launchMode="singleTask"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/Feed_Theme.NoActionBar"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -108,7 +108,7 @@
             android:name="net.frju.flym.ui.entrydetails.EntryDetailsActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleTask"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Feed_Theme.NoActionBar" />
         <activity
             android:name="net.frju.flym.ui.feeds.FeedListEditActivity"
             android:label="@string/feeds"

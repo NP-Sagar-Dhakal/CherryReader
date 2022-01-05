@@ -40,7 +40,7 @@ class DiscoverActivity : AppCompatActivity(), FeedManagementInterface {
     private var searchInput: AutoCompleteTextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setupTheme()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed_search)
         this.initSearchInputs()

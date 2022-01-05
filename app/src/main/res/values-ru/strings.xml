@@ -147,6 +147,5 @@
     <string-array name="settings_themes">
         <item>Светлая</item>
         <item>Тёмная</item>
-        <item>Чёрная</item>
     </string-array>
 </resources>

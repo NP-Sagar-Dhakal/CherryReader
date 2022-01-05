@@ -163,6 +163,5 @@
     <string-array name="settings_themes">
         <item>Terang</item>
         <item>Gelap</item>
-        <item>Hitam</item>
     </string-array>
 </resources>

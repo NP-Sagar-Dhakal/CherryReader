@@ -119,6 +119,5 @@
     <string-array name="settings_themes">
         <item>Světlé</item>
         <item>Tmavé</item>
-        <item>Černé</item>
     </string-array>
 </resources>

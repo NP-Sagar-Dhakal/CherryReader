@@ -154,6 +154,5 @@
     <string-array name="settings_themes">
         <item>فاتح</item>
         <item>داكن</item>
-        <item>أسود</item>
     </string-array>
 </resources>

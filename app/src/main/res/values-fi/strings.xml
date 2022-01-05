@@ -116,6 +116,5 @@
     <string-array name="settings_themes">
         <item>Vaalea</item>
         <item>Tumma</item>
-        <item>Musta</item>
     </string-array>
 </resources>

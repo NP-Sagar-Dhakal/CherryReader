@@ -163,6 +163,5 @@
     <string-array name="settings_themes">
         <item>ライト</item>
         <item>ダーク</item>
-        <item>ブラック</item>
     </string-array>
 </resources>

@@ -158,6 +158,5 @@
     <string-array name="settings_themes">
         <item>Licht</item>
         <item>Donker</item>
-        <item>Zwart</item>
     </string-array>
 </resources>

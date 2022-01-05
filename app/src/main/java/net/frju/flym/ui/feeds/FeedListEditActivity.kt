@@ -20,6 +20,7 @@ package net.frju.flym.ui.feeds
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_feed_list_edit.*
 import net.fred.feedex.R
 import net.frju.flym.utils.setupTheme
 

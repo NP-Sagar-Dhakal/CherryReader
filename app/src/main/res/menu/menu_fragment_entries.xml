@@ -6,12 +6,17 @@
         android:id="@+id/menu_entries__search"
         android:icon="@drawable/ic_search_white_24dp"
         android:title="@android:string/search_go"
-        app:showAsAction="collapseActionView|always"
-        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
 
     <item
         android:id="@+id/menu_entries__share"
         android:title="@string/menu_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mark_all_as_read"
+        android:title="@string/menu_all_read"
         app:showAsAction="never" />
 
     <item
@@ -23,4 +28,5 @@
         android:id="@+id/menu_entries__about"
         android:title="@string/about_flym"
         app:showAsAction="never" />
+
 </menu>

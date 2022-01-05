@@ -4,9 +4,8 @@
     android:id="@+id/entry_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/selected_item_background"
-    android:foreground="?android:selectableItemBackground"
-    android:minHeight="100dp"
+    android:background="@color/primary_background"
+    android:minHeight="105dp"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
@@ -31,7 +30,7 @@
         android:drawablePadding="3dp"
         android:ellipsize="end"
         android:gravity="top"
-        android:maxLines="3"
+        android:maxLines="2"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="?attr/colorReadState"
         android:textIsSelectable="false"
@@ -84,7 +83,16 @@
         android:padding="12dp"
         android:src="@drawable/ic_star_24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="?attr/colorReadState" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/background_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

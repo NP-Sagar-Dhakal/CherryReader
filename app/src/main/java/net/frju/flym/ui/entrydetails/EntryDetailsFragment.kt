@@ -156,7 +156,7 @@ class EntryDetailsFragment : Fragment() {
             }
         }
 
-        if (defaultSharedPreferences.getBoolean(HIDE_NAVIGATION_ON_SCROLL, false)) {
+        if (defaultSharedPreferences.getBoolean(HIDE_NAVIGATION_ON_SCROLL, true)) {
             toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
                 scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
                     AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
@@ -185,7 +185,7 @@ class EntryDetailsFragment : Fragment() {
                 }
                 insets
             }
-            val statusBarBackground = ResourcesCompat.getColor(resources, R.color.status_bar_background, null)
+            val statusBarBackground = ResourcesCompat.getColor(resources, R.color.colorPrimaryDark, null)
             activity?.window?.statusBarColor = statusBarBackground
             activity?.window?.navigationBarColor = if (context?.isGestureNavigationEnabled() == true) Color.TRANSPARENT else statusBarBackground
         }

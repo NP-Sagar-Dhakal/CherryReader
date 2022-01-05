@@ -151,6 +151,5 @@
     <string-array name="settings_themes">
         <item>Svetla</item>
         <item>Tamna</item>
-        <item>Crna</item>
     </string-array>
 </resources>

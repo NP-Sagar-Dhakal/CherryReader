@@ -164,6 +164,5 @@
     <string-array name="settings_themes">
         <item>Hell</item>
         <item>Dunkel</item>
-        <item>Schwarz</item>
     </string-array>
 </resources>

@@ -140,6 +140,5 @@
     <string-array name="settings_themes">
         <item>আলো</item>
         <item>অন্ধকার</item>
-        <item>কালো</item>
     </string-array>
 </resources>

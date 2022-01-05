@@ -43,9 +43,9 @@ class EntryDetailsActivity : AppCompatActivity() {
             }
 
             supportFragmentManager
-                    .beginTransaction()
-                    .replace(android.R.id.content, fragment)
-                    .commitAllowingStateLoss()
+                .beginTransaction()
+                .replace(android.R.id.content, fragment)
+                .commitAllowingStateLoss()
         }
     }
 

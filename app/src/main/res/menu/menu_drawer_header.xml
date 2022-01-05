@@ -4,6 +4,11 @@
     tools:context="net.frju.flym.ui.main.MainActivity">
 
     <item
+        android:id="@+id/add_feed"
+        android:title="@string/new_feed"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/reorder"
         android:title="@string/menu_reorder"
         app:showAsAction="never" />
@@ -16,15 +21,5 @@
     <item
         android:id="@+id/export_feeds"
         android:title="@string/menu_export"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/menu_entries__settings"
-        android:title="@string/menu_settings"
-        app:showAsAction="never" />
-
-    <item
-        android:id="@+id/menu_entries__about"
-        android:title="@string/about_flym"
         app:showAsAction="never" />
 </menu>

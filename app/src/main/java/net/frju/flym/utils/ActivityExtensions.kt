@@ -19,7 +19,6 @@ package net.frju.flym.utils
 
 import android.app.Activity
 import net.fred.feedex.R
-import net.frju.flym.data.utils.PrefConstants
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.inputMethodManager
 
@@ -31,20 +30,16 @@ fun Activity.closeKeyboard() {
 
 fun Activity.setupTheme() {
     doAsync {
-        setTheme(when (getPrefString(PrefConstants.THEME, "DARK")) {
-            "LIGHT" -> R.style.AppThemeLight
-            "BLACK" -> R.style.AppThemeBlack
-            else -> R.style.AppTheme
-        })
+        setTheme(
+            R.style.Feed_Theme
+        )
     }
 }
 
 fun Activity.setupNoActionBarTheme() {
     doAsync {
-        setTheme(when (getPrefString(PrefConstants.THEME, "DARK")) {
-            "LIGHT" -> R.style.AppThemeLight_NoActionBar
-            "BLACK" -> R.style.AppThemeBlack_NoActionBar
-            else -> R.style.AppTheme_NoActionBar
-        })
+        setTheme(
+            R.style.Feed_Theme_NoActionBar
+        )
     }
 }

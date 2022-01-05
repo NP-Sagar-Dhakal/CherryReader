@@ -35,7 +35,7 @@ class AutoRefreshJobService : JobService() {
     companion object {
         var ignoreNextJob = false
 
-        private const val TWO_HOURS = "7200"
+        private const val TWO_HOURS = "21600"
         private const val JOB_ID = 0
 
         fun initAutoRefresh(context: Context) {

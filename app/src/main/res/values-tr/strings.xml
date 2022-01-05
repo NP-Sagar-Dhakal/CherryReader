@@ -150,6 +150,5 @@
     <string-array name="settings_themes">
         <item>Aydınlık</item>
         <item>Koyu</item>
-        <item>Siyah</item>
     </string-array>
 </resources>

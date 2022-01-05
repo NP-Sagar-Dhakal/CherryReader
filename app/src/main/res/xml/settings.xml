@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <PreferenceCategory
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="@string/settings_category_general">
+        android:title="@string/settings_category_general"
+        app:iconSpaceReserved="false">
 
         <net.frju.flym.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
@@ -16,33 +18,37 @@
             android:entryValues="@array/settings_themes_values"
             android:inputType="text"
             android:key="theme"
-            android:title="@string/settings_theme" />
+            android:title="@string/settings_theme"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="hide_navigation_on_scroll"
             android:summary="@string/settings_hide_navigation_on_scroll_description"
-            android:title="@string/settings_hide_navigation_on_scroll" />
+            android:title="@string/settings_hide_navigation_on_scroll"
+            app:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="@string/settings_category_article_appearance">
+        android:title="@string/settings_category_article_appearance"
+        app:iconSpaceReserved="false">
 
 
         <net.frju.flym.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:defaultValue="0"
+            android:defaultValue="1"
             android:entries="@array/settings_font_sizes"
             android:entryValues="@array/settings_font_size_values"
             android:inputType="number"
             android:key="font_size"
-            android:title="@string/settings_font_size" />
+            android:title="@string/settings_font_size"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -50,7 +56,8 @@
             android:defaultValue="true"
             android:key="display_images"
             android:summary="@string/settings_display_images_description"
-            android:title="@string/settings_display_images" />
+            android:title="@string/settings_display_images"
+            app:iconSpaceReserved="false" />
 
         <net.frju.flym.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
@@ -61,7 +68,8 @@
             android:entryValues="@array/settings_preload_image_modes_values"
             android:inputType="text"
             android:key="preload_image_mode"
-            android:title="@string/settings_preload_image_mode" />
+            android:title="@string/settings_preload_image_mode"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -69,7 +77,8 @@
             android:defaultValue="false"
             android:key="open_browser_directly"
             android:summary="@string/open_browser_direct"
-            android:title="@string/open_browser_direct_title" />
+            android:title="@string/open_browser_direct_title"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -77,14 +86,16 @@
             android:defaultValue="true"
             android:key="enable_swipe_entry"
             android:summary="@string/settings_enable_entry_swipe_description"
-            android:title="@string/settings_enable_entry_swipe" />
+            android:title="@string/settings_enable_entry_swipe"
+            app:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="@string/settings_category_article_list">
+        android:title="@string/settings_category_article_list"
+        app:iconSpaceReserved="false">
 
 
         <CheckBoxPreference
@@ -93,15 +104,17 @@
             android:defaultValue="true"
             android:key="display_thumbnails"
             android:summary="@string/settings_display_thumbnails_description"
-            android:title="@string/settings_display_thumbnails" />
+            android:title="@string/settings_display_thumbnails"
+            app:iconSpaceReserved="false" />
 
-        <CheckBoxPreference
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:defaultValue="false"
-            android:key="hide_button_mark_all_as_read"
-            android:summary="@string/settings_hide_button_mark_all_as_read_description"
-            android:title="@string/settings_hide_button_mark_all_as_read" />
+        <!--        <CheckBoxPreference-->
+        <!--        app:iconSpaceReserved="false"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:defaultValue="false"-->
+        <!--            android:key="hide_button_mark_all_as_read"-->
+        <!--            android:summary="@string/settings_hide_button_mark_all_as_read_description"-->
+        <!--            android:title="@string/settings_hide_button_mark_all_as_read" />-->
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -109,7 +122,8 @@
             android:defaultValue="true"
             android:key="sort_order"
             android:summary="@string/settings_sort_order"
-            android:title="@string/settings_sort_order_title" />
+            android:title="@string/settings_sort_order_title"
+            app:iconSpaceReserved="false" />
 
         <net.frju.flym.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
@@ -119,7 +133,8 @@
             android:entryValues="@array/settings_keep_time_values"
             android:inputType="number"
             android:key="keep_time"
-            android:title="@string/settings_keep_time" />
+            android:title="@string/settings_keep_time"
+            app:iconSpaceReserved="false" />
 
         <net.frju.flym.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
@@ -129,7 +144,8 @@
             android:entryValues="@array/settings_keep_time_values"
             android:inputType="number"
             android:key="keep_time_unread"
-            android:title="@string/settings_keep_time_unread" />
+            android:title="@string/settings_keep_time_unread"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -137,13 +153,15 @@
             android:defaultValue="true"
             android:key="remove_duplicates"
             android:summary="@string/settings_remove_duplicates_description"
-            android:title="@string/settings_remove_duplicates_description_title" />
+            android:title="@string/settings_remove_duplicates_description_title"
+            app:iconSpaceReserved="false" />
 
         <EditTextPreference
+            android:dialogMessage="@string/filter_dialog_message"
             android:key="filter_keywords"
             android:summary="@string/filter"
             android:title="@string/filter_title"
-            android:dialogMessage="@string/filter_dialog_message"/>
+            app:iconSpaceReserved="false" />
 
 
     </PreferenceCategory>
@@ -151,7 +169,8 @@
     <PreferenceCategory
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="@string/settings_category_refresh">
+        android:title="@string/settings_category_refresh"
+        app:iconSpaceReserved="false">
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -159,18 +178,20 @@
             android:defaultValue="true"
             android:key="refresh_enabled"
             android:summary="@string/settings_refresh_enabled_description"
-            android:title="@string/settings_refresh_enabled" />
+            android:title="@string/settings_refresh_enabled"
+            app:iconSpaceReserved="false" />
 
         <net.frju.flym.ui.views.AutoSummaryListPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:defaultValue="7200"
+            android:defaultValue="21600"
             android:dependency="refresh_enabled"
             android:entries="@array/settings_intervals"
             android:entryValues="@array/settings_interval_values"
             android:inputType="number"
             android:key="refresh_interval"
-            android:title="@string/settings_refresh_interval" />
+            android:title="@string/settings_refresh_interval"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -179,15 +200,17 @@
             android:dependency="refresh_enabled"
             android:key="enable_refresh_notification"
             android:summary="@string/settings_refresh_enable_notifications_description"
-            android:title="@string/settings_refresh_enable_notifications" />
+            android:title="@string/settings_refresh_enable_notifications"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:key="refresh_on_startup"
             android:summary="@string/refresh_on_startup"
-            android:title="@string/refresh_on_startup_title" />
+            android:title="@string/refresh_on_startup_title"
+            app:iconSpaceReserved="false" />
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
@@ -195,7 +218,8 @@
             android:defaultValue="false"
             android:key="refresh_wifi_only"
             android:summary="@string/settings_refresh_wifi_only_description"
-            android:title="@string/settings_refresh_wifi_only" />
+            android:title="@string/settings_refresh_wifi_only"
+            app:iconSpaceReserved="false" />
 
     </PreferenceCategory>
 

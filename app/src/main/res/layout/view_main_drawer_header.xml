@@ -4,19 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
-
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header_background"
-        tools:ignore="ContentDescription" />
+    android:background="@color/primary_background">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -29,11 +17,13 @@
         android:id="@+id/drawer_hint"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="bottom"
+        android:paddingVertical="10dp"
         android:paddingStart="24dp"
         android:paddingEnd="80dp"
-        android:paddingVertical="24dp"
-        android:gravity="bottom"
         android:text="@string/drawer_explanation"
+        android:textColor="@color/normal_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline" />
@@ -42,11 +32,20 @@
         android:id="@+id/more"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?android:selectableItemBackground"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:srcCompat="@drawable/ic_more_vert_white_24dp"
         tools:ignore="ContentDescription" />
+<!--for personal use-->
+<!--    <ImageView-->
+<!--        android:id="@+id/goback"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@id/guideline"-->
+<!--        app:srcCompat="@drawable/ic_back_white_24dp"-->
+<!--        tools:ignore="ContentDescription" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

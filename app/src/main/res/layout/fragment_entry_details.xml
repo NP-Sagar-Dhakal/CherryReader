@@ -35,7 +35,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
-                android:theme="@style/AppTheme.ActionBar.Details" />
+                android:theme="@style/Feed_Theme.ActionBar.Details" />
 
         </com.google.android.material.appbar.AppBarLayout>
 

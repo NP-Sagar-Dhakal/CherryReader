@@ -31,10 +31,6 @@ interface MainNavigator {
 
     fun goToFeedSearch()
 
-    fun goToAboutMe()
-
-    fun goToSettings()
-
     fun setSelectedEntryId(selectedEntryId: String)
 
 }

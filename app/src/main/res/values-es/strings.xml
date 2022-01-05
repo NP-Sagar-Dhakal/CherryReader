@@ -125,6 +125,5 @@
     <string-array name="settings_themes">
         <item>Claro</item>
         <item>Oscuro</item>
-        <item>Negro</item>
     </string-array>
 </resources>

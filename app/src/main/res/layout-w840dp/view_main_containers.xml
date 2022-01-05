@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/container_details_top_margin"
         android:layout_marginEnd="@dimen/container_horizontal_padding_end"
-        app:cardBackgroundColor="@color/colorBackground"
+        app:cardBackgroundColor="@color/primary_background"
         app:cardElevation="3dp" />
 
 </FrameLayout>

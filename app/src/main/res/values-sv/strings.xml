@@ -103,6 +103,5 @@
     <string-array name="settings_themes">
         <item>Ljus</item>
         <item>Mörk</item>
-        <item>Svart</item>
     </string-array>
 </resources>

@@ -53,8 +53,10 @@ import net.frju.flym.data.entities.EntryWithFeed
 import net.frju.flym.data.entities.Feed
 import net.frju.flym.data.utils.PrefConstants
 import net.frju.flym.service.FetcherService
+import net.frju.flym.ui.about.AboutActivity
 import net.frju.flym.ui.main.MainActivity
 import net.frju.flym.ui.main.MainNavigator
+import net.frju.flym.ui.settings.SettingsActivity
 import net.frju.flym.utils.*
 import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.titleResource
@@ -181,48 +183,7 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
             badgeTextColor = requireContext().colorAttr(R.attr.colorUnreadBadgeText)
         }
 
-        read_all_fab.onClick { _ ->
-            entryIds?.let { entryIds ->
-                if (entryIds.isNotEmpty()) {
-                    doAsync {
-                        // TODO check if limit still needed
-                        entryIds.withIndex().groupBy { it.index / 300 }.map { pair -> pair.value.map { it.value } }.forEach {
-                            App.db.entryDao().markAsRead(it)
-                        }
-                    }
 
-                    Snackbar
-                            .make(coordinator, R.string.marked_as_read, Snackbar.LENGTH_LONG)
-                            .setAction(R.string.undo) { _ ->
-                                doAsync {
-                                    // TODO check if limit still needed
-                                    entryIds.withIndex().groupBy { it.index / 300 }.map { pair -> pair.value.map { it.value } }.forEach {
-                                        App.db.entryDao().markAsUnread(it)
-                                    }
-
-                                    uiThread {
-                                        // we need to wait for the list to be empty before displaying the new items (to avoid scrolling issues)
-                                        listDisplayDate = Date().time
-                                        initDataObservers()
-                                    }
-                                }
-                            }
-                            .apply {
-                                view.updateLayoutParams<CoordinatorLayout.LayoutParams> {
-                                    anchorId = R.id.bottom_navigation
-                                    anchorGravity = Gravity.TOP
-                                    gravity = Gravity.TOP
-                                    insetEdge = Gravity.BOTTOM
-                                }
-                                show()
-                            }
-                }
-
-                if (feed == null || feed?.id == Feed.ALL_ENTRIES_ID) {
-                    activity?.notificationManager?.cancel(0)
-                }
-            }
-        }
     }
 
     private fun initDataObservers() {
@@ -300,9 +261,7 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
             adapter.notifyDataSetChanged()
         }
 
-        val hideFAB = context?.getPrefBoolean(PrefConstants.HIDE_BUTTON_MARK_ALL_AS_READ, false) == true
-
-        if (context?.getPrefBoolean(PrefConstants.HIDE_NAVIGATION_ON_SCROLL, false) == true) {
+        if (context?.getPrefBoolean(PrefConstants.HIDE_NAVIGATION_ON_SCROLL, true) == true) {
             bottom_navigation.updateLayoutParams<CoordinatorLayout.LayoutParams> {
                 if (behavior !is HideBottomViewOnScrollBehavior) {
                     behavior = HideBottomViewOnScrollBehavior<BottomNavigationView>()
@@ -313,23 +272,7 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
                 recycler_view.removeOnScrollListener(it)
                 fabScrollListener = null
             }
-            if (hideFAB) {
-                read_all_fab.hide()
-            } else {
-                if (isBottomNavigationViewShown()) {
-                    read_all_fab.show()
-                }
-                fabScrollListener = object : RecyclerView.OnScrollListener() {
-                    override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                        if (dy > 0 && read_all_fab.isShown) {
-                            read_all_fab.hide()
-                        } else if (dy < 0 && !read_all_fab.isShown) {
-                            read_all_fab.show()
-                        }
-                    }
-                }
-                recycler_view.addOnScrollListener(fabScrollListener!!)
-            }
+
             toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
                 scrollFlags = AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL or
                         AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS
@@ -353,7 +296,7 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
                 }
                 insets
             }
-            val statusBarBackground = ResourcesCompat.getColor(resources, R.color.status_bar_background, null)
+            val statusBarBackground = ResourcesCompat.getColor(resources, R.color.colorPrimaryDark, null)
             activity?.window?.statusBarColor = statusBarBackground
             activity?.window?.navigationBarColor = if (context?.isGestureNavigationEnabled() == true) Color.TRANSPARENT else statusBarBackground
         } else {
@@ -373,11 +316,6 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
             fabScrollListener?.let {
                 recycler_view.removeOnScrollListener(it)
                 fabScrollListener = null
-            }
-            if (hideFAB) {
-                read_all_fab.hide()
-            } else {
-                read_all_fab.show()
             }
             appbar.setExpanded(true, true)
             toolbar.updateLayoutParams<AppBarLayout.LayoutParams> {
@@ -537,9 +475,6 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
         }
         if (!canScrollRecyclerView) {
             appbar.setExpanded(true, true)
-            if (!hideFAB) {
-                read_all_fab.show()
-            }
         }
     }
 
@@ -610,12 +545,51 @@ class EntriesFragment : Fragment(R.layout.fragment_entries) {
                     share(content.take(300000), title) // take() to avoid crashing with a too big intent
                 }
             }
-            R.id.menu_entries__about -> {
-                navigator.goToAboutMe()
+            R.id.mark_all_as_read -> {
+                entryIds?.let { entryIds ->
+                    if (entryIds.isNotEmpty()) {
+                        doAsync {
+                            // TODO check if limit still needed
+                            entryIds.withIndex().groupBy { it.index / 300 }.map { pair -> pair.value.map { it.value } }.forEach {
+                                App.db.entryDao().markAsRead(it)
+                            }
+                        }
+
+                        Snackbar
+                            .make(coordinator, R.string.marked_as_read, Snackbar.LENGTH_LONG)
+                            .setAction(R.string.undo) { _ ->
+                                doAsync {
+                                    // TODO check if limit still needed
+                                    entryIds.withIndex().groupBy { it.index / 300 }.map { pair -> pair.value.map { it.value } }.forEach {
+                                        App.db.entryDao().markAsUnread(it)
+                                    }
+
+                                    uiThread {
+                                        // we need to wait for the list to be empty before displaying the new items (to avoid scrolling issues)
+                                        listDisplayDate = Date().time
+                                        initDataObservers()
+                                    }
+                                }
+                            }
+                            .apply {
+                                view.updateLayoutParams<CoordinatorLayout.LayoutParams> {
+                                    anchorId = R.id.bottom_navigation
+                                    anchorGravity = Gravity.TOP
+                                    gravity = Gravity.TOP
+                                    insetEdge = Gravity.BOTTOM
+                                }
+                                show()
+                            }
+                    }
+
+                    if (feed == null || feed?.id == Feed.ALL_ENTRIES_ID) {
+                        activity?.notificationManager?.cancel(0)
+                    }
+                }
             }
-            R.id.menu_entries__settings -> {
-                navigator.goToSettings()
-            }
+
+            R.id.menu_entries__about -> requireActivity().startActivity<AboutActivity>()
+            R.id.menu_entries__settings -> requireActivity().startActivity<SettingsActivity>()
         }
 
         return true

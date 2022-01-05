@@ -1,51 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#009789</color>
-    <color name="colorAccent">#02C8B4</color>
+    <!--    Main Color-->
+    <color name="colorPrimary">#F1F2FF</color>
+    <color name="colorPrimaryDark">#F1F2FF</color>
+    <color name="colorAccent">#FF687E</color>
+    <color name="status_background">#F1F2FF</color>
 
+    <!--    Text Color-->
+    <color name="dark_title">#000000</color>
+    <color name="grey_title">#CC000000</color>
+    <color name="dark_low_title">#99000000</color>
+
+    <color name="dark_sub_title">#424242</color>
+    <color name="grey_sub_title">#CC424242</color>
+
+    <color name="dark_text">#000000</color>
+    <color name="normal_text">#CC000000</color>
+
+    <color name="white_text">#ffffff</color>
+    <color name="low_white_text">#CCFFFFFF</color>
+
+
+    <!--    Layout Color-->
+    <color name="pure_white">#ffffff</color>
+    <color name="pure_black">#000000</color>
+
+    <color name="primary_background">#F1F2FF</color>
+
+    <color name="divider_dark">#1F000000</color>
+    <color name="divider_light">#1FFFFFFF</color>
+
+    <color name="selected_dark">#0F000000</color>
+    <color name="selected_light">#0FFFFFFF</color>
+
+    <color name="ultra_grey">#424242</color>
+    <color name="max_grey">#757575</color>
+    <color name="mid_grey">#bdbdbd</color>
+    <color name="low_grey">#eeeeee</color>
+
+
+    <!--    Drawable/Tint-->
+    <color name="theme_tint">#000000</color>
+    <color name="normal_tint">#CC000000</color>
+
+    <color name="accent_tint">#FF687E</color>
+
+    <color name="white_tint">#ffffff</color>
+    <color name="normal_white_tint">#ccffffff</color>
+
+    <color name="background_line">#E6E6E6</color>
+
+    <!--    Other Colors-->
+    <color name="green">#00FF00</color>
+    <color name="low_green">#CC00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="low_blue">#CC0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="low_red">#CCFF0000</color>
+    <color name="dark_red">#B71C1C</color>
+
+    <!--    colors from flym-->
     <color name="shortcutBackground">#F5F5F5</color>
     <color name="shortcutForeground">#00665C</color>
-
-    <color name="selected_item_background">#4c009789</color>
-
-    <color name="status_bar_background">#52000000</color>
-
-    <!-- Dark Theme specific colors -->
-    <color name="colorPrimaryDark">#00665C</color>
-    <color name="colorBackground">#202020</color>
-    <color name="color_unread">#ffffff</color>
-    <color name="color_read">#9e9e9e</color>
-    <color name="bottom_navigation_disable">#7bffffff</color>
-    <color name="quote_background_dark">#383b3f</color>
-    <color name="quote_left_dark">#686b6f</color>
-    <color name="article_text_dark">#C0C0C0</color>
-    <color name="subtitle_dark">#8c8c8c</color>
-    <color name="subtitle_border_dark">#303030</color>
-
-    <!-- Light Theme specific colors -->
-    <color name="colorPrimaryLight">#00665C</color>
-    <color name="colorBackgroundLight">#f6f6f6</color>
-    <color name="color_unread_light">#000000</color>
-    <color name="color_read_light">#9e9e9e</color>
-    <color name="bottom_navigation_disable_light">#7b000000</color>
+    <color name="selected_item_background">#1A000000</color>
     <color name="quote_background_light">#e6e6e6</color>
     <color name="quote_left_light">#a6a6a6</color>
-    <color name="article_text_light">#000000</color>
-    <color name="subtitle_light">#666666</color>
-    <color name="subtitle_border_light">#ddd</color>
-
-    <!-- Black Theme specific colors -->
-    <color name="colorAccentBlack">#02C8B4</color>
-    <color name="colorPrimaryBlack">#111111</color>
-    <color name="colorPrimaryDarkBlack">#000000</color>
-    <color name="colorBackgroundBlack">#000000</color>
-    <color name="color_unread_black">#ffffff</color>
-    <color name="color_read_black">#9e9e9e</color>
-    <color name="bottom_navigation_disable_black">#7bffffff</color>
-    <color name="quote_background_black">#383b3f</color>
-    <color name="quote_left_black">#686b6f</color>
-    <color name="article_text_black">#C0C0C0</color>
-    <color name="subtitle_black">#8c8c8c</color>
-    <color name="subtitle_border_black">#303030</color>
 
 </resources>

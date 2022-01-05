@@ -37,6 +37,5 @@
     <string-array name="settings_themes_values">
         <item>LIGHT</item>
         <item>DARK</item>
-        <item>BLACK</item>
     </string-array>
 </resources>
