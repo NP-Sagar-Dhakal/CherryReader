@@ -26,7 +26,6 @@ import com.cherry.reader.utils.setupTheme
 class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setupTheme()
 
         super.onCreate(savedInstanceState)
 

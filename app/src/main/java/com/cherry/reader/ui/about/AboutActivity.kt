@@ -28,7 +28,6 @@ import com.vansuita.materialabout.builder.AboutBuilder
 class AboutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setupTheme()
 
         super.onCreate(savedInstanceState)
 

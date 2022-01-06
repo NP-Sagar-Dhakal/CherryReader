@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="Feed_Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Feed_Theme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -12,20 +12,20 @@
         <item name="colorColoredReadState">@color/colored_read_state_light</item>
         <item name="colorQuoteBackground">@color/quote_background_light</item>
         <item name="colorQuoteLeft">@color/quote_left_light</item>
-        <item name="colorArticleText">@color/dark_text</item>
+        <item name="colorArticleText">@color/feed_text</item>
         <item name="colorSubtitle">@color/grey_sub_title</item>
         <item name="colorSubtitleBorder">@color/primary_background</item>
         <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
         <item name="colorUnreadBadgeBackground">@color/colorAccent</item>
         <item name="colorUnreadBadgeText">@color/white_text</item>
-        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.DayNight</item>
     </style>
 
-    <style name="Feed_Theme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Feed_Theme.ActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.DayNight</item>
     </style>
 
     <style name="Feed_Theme.ActionBar.Details" parent="Feed_Theme.ActionBar" />

@@ -7,18 +7,18 @@
     <color name="status_background">#F1F2FF</color>
 
     <!--    Text Color-->
-    <color name="dark_title">#000000</color>
-    <color name="grey_title">#CC000000</color>
-    <color name="dark_low_title">#99000000</color>
+    <color name="dark_title">#CC000000</color>
+    <color name="grey_title">#99000000</color>
+    <color name="dark_low_title">#66000000</color>
 
-    <color name="dark_sub_title">#424242</color>
-    <color name="grey_sub_title">#CC424242</color>
+    <color name="dark_sub_title">#CC424242</color>
+    <color name="grey_sub_title">#99424242</color>
 
-    <color name="dark_text">#000000</color>
-    <color name="normal_text">#CC000000</color>
+    <color name="dark_text">#CC000000</color>
+    <color name="normal_text">#99000000</color>
 
-    <color name="white_text">#ffffff</color>
-    <color name="low_white_text">#CCFFFFFF</color>
+    <color name="white_text">#CCffffff</color>
+    <color name="low_white_text">#99FFFFFF</color>
 
 
     <!--    Layout Color-->
@@ -60,6 +60,7 @@
     <color name="dark_red">#B71C1C</color>
 
     <!--    colors from flym-->
+    <color name="feed_text">#2C2C2C</color>
     <color name="shortcutBackground">#F5F5F5</color>
     <color name="shortcutForeground">#00665C</color>
     <color name="selected_item_background">#1A000000</color>

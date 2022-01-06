@@ -27,7 +27,6 @@ import com.cherry.reader.utils.setupTheme
 class FeedListEditActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setupTheme()
 
         super.onCreate(savedInstanceState)
 

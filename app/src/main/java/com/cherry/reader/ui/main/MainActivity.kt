@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(), MainNavigator, AnkoLogger {
     private val feedAdapter = FeedAdapter(feedGroups)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        setupTheme()
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
