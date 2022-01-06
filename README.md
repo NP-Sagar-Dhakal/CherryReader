@@ -11,7 +11,7 @@ I'm not aware of any official way of publishing an RSS client on PlayStore and d
 I'm deeply sorry for all the people who like or contributed to Flym and I kindly ask you to not send me angry emails. I created and maintained Flym for free during several years, and since it is open-source you can try to give it a second life if you want to.
 
 
-Flym News Reader
+Cherry Reader
 ==================
 
 Light and modern Android feed reader (Atom/RSS).
@@ -27,6 +27,6 @@ It is [free/open-source software](https://www.gnu.org/philosophy/free-sw.html) u
 
 ## Screenshots
 
-![](https://lh3.googleusercontent.com/IABRvlpoCXSNwWd1vPuRw7kVFEHoIv_ChdZMBs8lLa0OVaTYPpJ2TO44p3w-wdrzluvd=w1440-h620-rw) _
-![](https://lh3.googleusercontent.com/Ie5lLGF242xxPPuSpDznKvK4OTfYI21xPnipG8p8Gtg7qUS1UPVNP3c0iwL0DLMOOw=w1440-h620-rw) _
-![](https://lh3.googleusercontent.com/LqORvNPrsJC0VB30oD6mtnIfQTVcxyTkKVVLQnElQ6i9__Kq7bwZGj74FmB3wZ4jWw=w1440-h620-rw)
+![](https://github.com/NP-Sagar-Dhakal/CherryReader/blob/master/graphics/playstore/Screenshot_2022-01-05-18-48-43.png) _
+![](https://github.com/NP-Sagar-Dhakal/CherryReader/blob/master/graphics/playstore/Screenshot_2022-01-05-18-49-04.png) _
+![](https://github.com/NP-Sagar-Dhakal/CherryReader/blob/master/graphics/playstore/Screenshot_2022-01-05-18-53-01.png)
