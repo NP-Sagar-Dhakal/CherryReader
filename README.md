@@ -27,6 +27,6 @@ It is [free/open-source software](https://www.gnu.org/philosophy/free-sw.html) u
 
 ## Screenshots
 
-![](https://github.com/NP-Sagar-Dhakal/CherryReader/blob/master/graphics/playstore/Screenshot_2022-01-05-18-48-43.png | width=620) _
-![](https://github.com/NP-Sagar-Dhakal/CherryReader/blob/master/graphics/playstore/Screenshot_2022-01-05-18-49-04.png | width=620) _
-![](https://github.com/NP-Sagar-Dhakal/CherryReader/blob/master/graphics/playstore/Screenshot_2022-01-05-18-53-01.png | width=620)
+![](https://raw.githubusercontent.com/NP-Sagar-Dhakal/CherryReader/master/graphics/playstore/Screenshot_2022-01-05-18-48-43.png=w1440-h620-rw) _
+![](https://raw.githubusercontent.com/NP-Sagar-Dhakal/CherryReader/master/graphics/playstore/Screenshot_2022-01-05-18-49-04.pngg=w1440-h620-rw) _
+![](https://raw.githubusercontent.com/NP-Sagar-Dhakal/CherryReader/master/graphics/playstore/Screenshot_2022-01-05-18-53-01.png=w1440-h620-rw)
