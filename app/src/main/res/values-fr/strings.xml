@@ -5,7 +5,6 @@
         <item quantity="one">%d nouvel article</item>
         <item quantity="other">%d nouveaux articles</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">À propos de Cherry Reader</string>
     <string name="welcome_title">Bienvenue sur Cherry. Voulez-vous ajouter un flux ?</string>
     <string name="cannot_find_feeds">Aucun flux n\'a été trouvé</string>
@@ -21,7 +20,6 @@
     <string name="network_error">Pas de connexion disponible</string>
     <string name="drawer_explanation">Bienvenue !\n\nAppuyez longtemps sur les flux pour voir les options ▼</string>
     <string name="drawer_fetch_error_explanation">Certains de vos flux n\'ont pas été mis à jour correctement ▼</string>
-    <string name="about_screen_info">Cette application est gratuite et open-source sous license GPLv3. Vous êtes libre de la modifier tant que vous publiez vos modifications sous la même license.</string>
     <string name="navigation_button_content_description">Activer/désactiver le menu du flux</string>
     <!-- FEEDS -->
     <string name="feeds">Flux</string>

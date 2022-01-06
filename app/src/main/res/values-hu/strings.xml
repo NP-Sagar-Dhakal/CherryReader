@@ -5,7 +5,6 @@
         <item quantity="one">Egy új bejegyzés</item>
         <item quantity="other">%d új bejegyzés</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">A Cherry Reader-ről</string>
     <string name="welcome_title">Üdvözöljük a Flym-ben. Szeretne hozzáadni hírcsatornákat?</string>
     <string name="cannot_find_feeds">Nem található hírcsatorna</string>
@@ -21,7 +20,6 @@
     <string name="network_error">A hálózat nincs beállítva</string>
     <string name="drawer_explanation">Üdvözöljük\n\nHosszan nyomja meg a hírcsatornákat az opciók megtekintéséhez</string>
     <string name="drawer_fetch_error_explanation">Néhány hírcsatornáját nem sikerült megfelelően frissíteni</string>
-    <string name="about_screen_info">Ezt az alkalmazást ingyenes és nyílt forráskódú szoftverként teszem elérhetővé a GPLv3 licenc alatt. Nyugodtan módosíthatja, feltéve, hogy nyílt forráskódú marad.</string>
     <!-- FEEDS -->
     <string name="feeds">Hírcsatornák</string>
     <string name="menu_add_group">Csoport hozzáadása</string>

@@ -18,7 +18,9 @@
 package com.cherry.reader.utils
 
 import android.app.Activity
+import androidx.appcompat.app.AppCompatDelegate
 import com.cherry.reader.R
+import com.cherry.reader.data.utils.PrefConstants
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.inputMethodManager
 
@@ -30,9 +32,10 @@ fun Activity.closeKeyboard() {
 
 fun Activity.setupTheme() {
     doAsync {
-        setTheme(
-            R.style.Feed_Theme
-        )
+        when (getPrefString(PrefConstants.THEME, "LIGHT")) {
+            "DARK" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            else -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
     }
 }
 

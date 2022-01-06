@@ -6,7 +6,6 @@
         <item quantity="few">Нових чланака: %d</item>
         <item quantity="other">Нових чланака: %d</item>
     </plurals>
-    <string name="app_name">Cherry Reader</string>
     <string name="about_flym">О Cherry Reader</string>
     <string name="welcome_title">Добродошли у Cherry. Да ли желите да додате нови довод?</string>
     <string name="cannot_find_feeds">Доводи нису пронађени</string>
@@ -22,7 +21,6 @@
     <string name="network_error">Мрежа није подешена</string>
     <string name="drawer_explanation">Добродошли!\n\nЗа преглед опција, притисните и задржите жељени довод ▼</string>
     <string name="drawer_fetch_error_explanation">Део довода није освежен ▼</string>
-    <string name="about_screen_info">Ову апликацију објављујем као бесплатан и слободан софтвер под ГНУ-овом општом јавном лиценцом (ГПЛ) верзије 3</string>
     <!-- FEEDS -->
     <string name="feeds">Доводи</string>
     <string name="menu_add_group">Додај групу</string>

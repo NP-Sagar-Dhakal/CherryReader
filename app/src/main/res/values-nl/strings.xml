@@ -5,7 +5,6 @@
         <item quantity="one">Eén nieuw item</item>
         <item quantity="other">%d nieuwe items</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">Over Cherry Reader</string>
     <string name="welcome_title">Welkom bij Cherry. Wil je een feed toevoegen?</string>
     <string name="cannot_find_feeds">Geen feeds gevonden</string>
@@ -21,7 +20,6 @@
     <string name="network_error">Geen netwerkverbinding</string>
     <string name="drawer_explanation">Welkom!\n\nHoudt feeds lang ingedrukt om opties te tonen ▼</string>
     <string name="drawer_fetch_error_explanation">Sommige feeds zijn niet volledig ververst ▼</string>
-    <string name="about_screen_info">Ik publiceer deze applicatie als gratis en open-source software onder de GPLv3-licentie. Voel je vrij om ze aan te passen zolang je het ook open source houdt.</string>
     <!-- FEEDS -->
     <string name="feeds">Feeds</string>
     <string name="menu_add_group">Groep toevoegen</string>

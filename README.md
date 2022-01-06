@@ -6,8 +6,10 @@
 Google [added some restrictions](https://support.google.com/googleplay/android-developer/answer/10177647?visit_id=637410766788299017-71528281&rd=2#news) to news app and I don't see how Flym (and other RSS aggregators) could comply to that. For instance, Flym cannot provide a "valid and verifiable contact information" for the feed, nor it can assure that "each of the sources must meet News policy requirements".
 
 
-**FLYM UPDATES ON PLAY STORE ARE BLOCKED BY GOOGLE. So FredJul have archived the project. Now i am trying to rebuild the project and trying to comply with google policies.
+**FLYM UPDATES ON PLAY STORE ARE BLOCKED BY GOOGLE. So FredJul have archived the project**.
+Now i am trying to rebuild the project and trying to comply with google policies.
 I think rss reader apps are not news apps google added restrictions for news apps not for reader app. It's user's choice to read news, blogs or anything else. Is anyone interested to contribute feel free to send a pull request. For other information you can contact me at
+
 [Sagar Dhakal](mailto:cherrydigital.care@gmail.com?subject=[GitHub]%20Source%20Cherry%Reader)
 
 Cherry Reader

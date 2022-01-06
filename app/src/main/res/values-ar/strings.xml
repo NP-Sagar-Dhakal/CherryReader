@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- GENERAL -->
-    <string name="app_name">Flym</string>
     <string name="about_flym">حول Cherry Reader</string>
     <string name="welcome_title">مرحبا بكم في Cherry. هل ترغب في إضافة نشرة إخبارية؟</string>
     <string name="cannot_find_feeds">لم يتم العثور على أي خلاصات</string>
@@ -17,7 +16,6 @@
     <string name="network_error">لم يتم إعداد الشبكة</string>
     <string name="drawer_explanation">مرحباً!\n\nاضغط مطولاً على الخلاصات لمشاهدة الخيارات &lt;unk&gt;</string>
     <string name="drawer_fetch_error_explanation">بعض الخلاصات الخاصة بك لم يتم تحديثها بشكل صحيح</string>
-    <string name="about_screen_info">أنا أقوم بنشر هذا التطبيق كبرنامج مجاني ومفتوح المصدر بموجب ترخيص GPLv3. لا تتردد في تعديله طالما احتفظت به مفتوح المصدر.</string>
     <!-- FEEDS -->
     <string name="feeds">الخلاصات</string>
     <string name="menu_add_group">إضافة مجموعة</string>

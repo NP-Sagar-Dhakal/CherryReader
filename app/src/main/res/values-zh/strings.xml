@@ -4,7 +4,6 @@
     <plurals name="number_of_new_entries">
         <item quantity="other">%d 篇新文章</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">关于 Cherry Reader</string>
     <string name="welcome_title">欢迎使用 Cherry 。需要添加一个订阅源吗？</string>
     <string name="cannot_find_feeds">未发现订阅源</string>
@@ -20,7 +19,6 @@
     <string name="network_error">网络不可用</string>
     <string name="drawer_explanation">欢迎!\n\n长按订阅源查看选项 ▼</string>
     <string name="drawer_fetch_error_explanation">部分订阅源未正常刷新 ▼</string>
-    <string name="about_screen_info">我将此应用遵循 GPLv3 许可证发布为自由开源软件。你可以随意修改它，只要你也保持它开源。</string>
     <!-- FEEDS -->
     <string name="feeds">订阅源</string>
     <string name="menu_add_group">添加分组</string>

@@ -4,7 +4,6 @@
     <plurals name="number_of_new_entries">
         <item quantity="other">%d 件の新しいエントリー</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">Cherry Reader について</string>
     <string name="welcome_title">Cherry へようこそ。フィードを追加しますか？</string>
     <string name="cannot_find_feeds">フィードが見つかりませんでした</string>
@@ -20,7 +19,6 @@
     <string name="network_error">ネットワークが設定されていません</string>
     <string name="drawer_explanation">ようこそ！\n\nフィードを長押しするとオプションが表示されます ▼</string>
     <string name="drawer_fetch_error_explanation">一部のフィードが正しく更新されませんでした ▼</string>
-    <string name="about_screen_info">私はこのアプリケーションを自由かつオープンソースのソフトウェアとして、GPLv3 ライセンスの下で公開しています。オープンソースを維持する限り、自由に改変することができます。</string>
     <string name="navigation_button_content_description">フィード メニューの切り替え</string>
     <!-- FEEDS -->
     <string name="feeds">フィード</string>

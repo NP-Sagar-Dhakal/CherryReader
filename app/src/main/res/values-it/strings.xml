@@ -5,7 +5,6 @@
         <item quantity="one">Un nuovo articolo</item>
         <item quantity="other">%d nuovi articoli</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">Informazioni su Cherry Reader</string>
     <string name="welcome_title">Benvenuto in Cherry. Vuoi aggiungere un feed?</string>
     <string name="cannot_find_feeds">Nessun feed è stato trovato</string>
@@ -21,7 +20,6 @@
     <string name="network_error">Nessuna connessione disponibile</string>
     <string name="drawer_explanation">Benvenuto!\n\nCon una pressione prolungata sui feed vedrai le opzioni ▼</string>
     <string name="drawer_fetch_error_explanation">Alcuni feed non sono stati aggiornati correttamente ▼</string>
-    <string name="about_screen_info">Pubblico questa applicazione come software gratuito e open source con licenza GPLv3. Sentiti libero di modificarlo fintanto che lo mantieni anche open source.</string>
     <string name="navigation_button_content_description">Attiva il menù dei feed</string>
     <!-- FEEDS -->
     <string name="feeds">Feed</string>

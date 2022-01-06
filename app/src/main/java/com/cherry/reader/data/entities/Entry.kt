@@ -27,6 +27,7 @@ import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
 import com.cherry.reader.R
+import com.cherry.reader.utils.HtmlUtils
 import com.cherry.reader.utils.sha1
 import com.rometools.rome.feed.synd.SyndEntry
 import kotlinx.android.parcel.Parcelize
@@ -99,18 +100,34 @@ fun SyndEntry.toDbFormat(context: Context, feed: Feed): Entry {
         item.title = context.getString(R.string.entry_default_title)
     }
     item.description = contents.getOrNull(0)?.value ?: description?.value
+
+    if (item.description == null) {
+        foreignMarkup?.forEach {
+            if (it.namespace?.prefix == "media" && it.name == "group") {
+                it.children.forEach { mc ->
+                    if (mc.name == "description") item.description = mc.value
+                    if (mc.name == "thumbnail") {
+                        mc.attributes.forEach { tb ->
+                            if (tb.name == "url") item.imageLink = tb.value
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     item.link = link
 
     enclosures?.forEach {
-        if (it.type.contains("image")) {
+        if ((it.type != null && it.type.contains("image")) || HtmlUtils.isImageInUrl(it.url)) {
             item.imageLink = it.url
         }
     }
     if (item.imageLink == null) {
         foreignMarkup?.forEach {
-            if (it.namespace?.prefix == "media" && it.name == "content") {
+            if (it.namespace?.prefix == "media" && (it.name == "thumbnail" || it.name == "content")) {
                 it.attributes.forEach { mc ->
-                    if (mc.name == "url") item.imageLink = mc.value
+                    if (mc.name == "url" && HtmlUtils.isImageInUrl(mc.value)) item.imageLink = mc.value
                 }
             }
         }

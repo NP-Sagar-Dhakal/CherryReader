@@ -19,7 +19,6 @@
     <string name="network_error">No se ha configurado la red</string>
     <string name="drawer_explanation">Bienvenido!\n\nManten pulsado sobre una fuente para ver sus opciones ▼</string>
     <string name="drawer_fetch_error_explanation">Algunas fuentes no se han actualizado bien ▼</string>
-    <string name="about_screen_info">Estoy publicando esta aplicación de manera libre y de código abierto bajo la licencia GPLv3. Siéntate libre a modificarla siempre y cuando se mantenga de código abierto.</string>
     <!-- FEEDS -->
     <string name="feeds">Fuentes</string>
     <string name="menu_add_group">Añadir grupo</string>

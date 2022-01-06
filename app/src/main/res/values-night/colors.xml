@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Main Color-->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#F1F2FF</color>
+    <color name="colorAccent">#FF687E</color>
+    <color name="status_background">#F1F2FF</color>
+
+    <!--    Text Color-->
+    <color name="dark_title">#000000</color>
+    <color name="grey_title">#CC000000</color>
+    <color name="dark_low_title">#99000000</color>
+
+    <color name="dark_sub_title">#424242</color>
+    <color name="grey_sub_title">#CC424242</color>
+
+    <color name="dark_text">#000000</color>
+    <color name="normal_text">#CC000000</color>
+
+    <color name="white_text">#ffffff</color>
+    <color name="low_white_text">#CCFFFFFF</color>
+
+
+    <!--    Layout Color-->
+    <color name="pure_white">#ffffff</color>
+    <color name="pure_black">#000000</color>
+
+    <color name="primary_background">#F1F2FF</color>
+
+    <color name="divider_dark">#1F000000</color>
+    <color name="divider_light">#1FFFFFFF</color>
+
+    <color name="selected_dark">#0F000000</color>
+    <color name="selected_light">#0FFFFFFF</color>
+
+    <color name="ultra_grey">#424242</color>
+    <color name="max_grey">#757575</color>
+    <color name="mid_grey">#bdbdbd</color>
+    <color name="low_grey">#eeeeee</color>
+
+
+    <!--    Drawable/Tint-->
+    <color name="theme_tint">#000000</color>
+    <color name="normal_tint">#CC000000</color>
+
+    <color name="accent_tint">#FF687E</color>
+
+    <color name="white_tint">#ffffff</color>
+    <color name="normal_white_tint">#ccffffff</color>
+
+    <color name="background_line">#E6E6E6</color>
+
+    <!--    Other Colors-->
+    <color name="green">#00FF00</color>
+    <color name="low_green">#CC00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="low_blue">#CC0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="low_red">#CCFF0000</color>
+    <color name="dark_red">#B71C1C</color>
+
+    <!--    colors from flym-->
+    <color name="shortcutBackground">#F5F5F5</color>
+    <color name="shortcutForeground">#00665C</color>
+    <color name="selected_item_background">#1A000000</color>
+    <color name="quote_background_light">#e6e6e6</color>
+    <color name="quote_left_light">#a6a6a6</color>
+
+</resources>

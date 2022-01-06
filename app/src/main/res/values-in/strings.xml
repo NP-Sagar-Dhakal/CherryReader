@@ -4,7 +4,6 @@
     <plurals name="number_of_new_entries">
         <item quantity="other">%d entri baru</item>
     </plurals>
-    <string name="app_name">Flym</string>
     <string name="about_flym">Tentang Cherry Reader</string>
     <string name="welcome_title">Selamat datang di Cherry. Apakah anda ingin menambahkan feed?</string>
     <string name="cannot_find_feeds">Tidak ada feed yang ditemukan</string>
@@ -20,7 +19,6 @@
     <string name="network_error">Jaringan tidak tersedia</string>
     <string name="drawer_explanation">Selamat datang!\n\nSentuh lama pada feed untuk menampilkan menu ▼</string>
     <string name="drawer_fetch_error_explanation">Beberapa feed tidak disegarkan dengan benar ▼</string>
-    <string name="about_screen_info">Saya mempublikasikan aplikasi ini secara gratis, bebas dan bersumber terbuka dengan lisensi GPLv3. Jangan sungkan untuk memodifikasinya selama anda juga membuatnya bersumber terbuka.</string>
     <string name="navigation_button_content_description">Buka/tutup menu feed</string>
     <!-- FEEDS -->
     <string name="feeds">Feed</string>
